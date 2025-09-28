@@ -100,9 +100,11 @@ class RealWalletService extends ChangeNotifier {
                 Text('Connect Pera Wallet (${NetworkConfig.networkName})'),
               ],
             ),
-            content: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
+            content: Container(
+              width: double.maxFinite,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
                 // QR Code
                 Container(
                   padding: EdgeInsets.all(15),
@@ -150,7 +152,8 @@ class RealWalletService extends ChangeNotifier {
                   style: TextStyle(fontSize: 12, color: Colors.grey),
                   textAlign: TextAlign.center,
                 ),
-              ],
+                ],
+              ),
             ),
             actions: [
               TextButton(

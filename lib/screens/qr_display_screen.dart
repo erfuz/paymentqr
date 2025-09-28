@@ -51,9 +51,11 @@ class QRDisplayScreen extends StatelessWidget {
         ],
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
+        child: SingleChildScrollView(
+          padding: EdgeInsets.all(20),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
             // Title
             Text(
               '⚡ Payment QR',
@@ -236,7 +238,8 @@ class QRDisplayScreen extends StatelessWidget {
                 fontSize: 14,
               ),
             ),
-          ],
+            ],
+          ),
         ),
       ),
     );

@@ -1,67 +1,61 @@
-# payment_qr
+# Payment QR - Algorand Payment System
 
-Algorand Payment QR Code Generator - Flutter Application
+## 📱 About
+Payment QR is a mobile application that simplifies receiving Algorand blockchain payments through QR codes. Users can quickly and securely transfer ALGO by simply creating or scanning QR codes.
 
-## Özellikler
+## 🎯 Purpose
+Making Algorand payments accessible to everyone. Instead of dealing with complex wallet addresses, receive or send payments in seconds using QR codes.
 
-- ✅ Algorand wallet adresi girişi
-- ✅ ALGO miktarı girişi  
-- ✅ Opsiyonel not ekleme
-- ✅ QR kod oluşturma (250x250 pixel)
-- ✅ Link kopyalama
-- ✅ WhatsApp/Telegram ile paylaşma
-- ✅ Dark tema
-- ✅ Offline çalışma
+## ✨ Features
+- **QR Code Generation**: Create payment QR codes with wallet address, amount, and optional notes
+- **QR Code Scanner**: Scan QR codes to auto-fill payment information
+- **Deep Link Integration**: Direct connection with Pera Wallet
+- **TestNet Support**: Safe testing with free test tokens
+- **Multi-language**: Turkish and English language support
+- **Theme Selection**: Dark/Light mode
 
-## Kurulum
+## 🛠️ Tech Stack
+- **Flutter**: Cross-platform mobile development
+- **Dart**: Programming language
+- **Algorand Blockchain**: Payment infrastructure
+- **Pera Wallet**: Wallet integration
+- **Provider**: State management
+- **QR Flutter**: QR code generation
 
-1. Flutter'ın kurulu olduğundan emin ol:
+## 📲 How to Use
+1. Open the app
+2. Enter wallet address (pre-filled for TestNet)
+3. Set payment amount
+4. Generate QR code
+5. Recipient scans with Pera Wallet and confirms payment
+
+## 🚀 Installation
 ```bash
-flutter doctor
-```
-
-2. Bağımlılıkları yükle:
-```bash
+git clone https://github.com/erfuz/paymentqr.git
+cd payment_qr
 flutter pub get
-```
-
-3. Uygulamayı çalıştır:
-```bash
 flutter run
 ```
 
-## APK Oluşturma
+## 🧪 Testing on TestNet
+1. Switch Pera Wallet to TestNet (Settings → Developer → Node → TestNet)
+2. Get test ALGO from [Algorand TestNet Faucet](https://bank.testnet.algorand.network/)
+3. Make test payments in the app
 
-### Debug APK (Hızlı, büyük boyut):
-```bash
-flutter build apk --debug
-```
-Konum: `build/app/outputs/flutter-apk/app-debug.apk`
+## 📋 Requirements
+- Flutter SDK (>=3.0.0)
+- Dart SDK (>=3.0.0)
+- Android Studio / VS Code
+- Android/iOS device or emulator
 
-### Release APK (Yavaş, küçük boyut):
-```bash
-flutter build apk --release --split-per-abi
-```
-Konum: `build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk`
+## 🤝 Use Cases
+- **Merchants**: Accept ALGO payments in stores
+- **Peer-to-Peer**: Send money to friends
+- **Events**: Quick payment collection
+- **Services**: Invoice payments via QR
 
-## Direkt Telefona Yükleme
+## 📄 License
+MIT License
 
-USB ile telefonu bağla ve:
-```bash
-flutter install
-```
-
-## Nasıl Çalışır?
-
-1. Kullanıcı wallet adresini girer
-2. ALGO miktarını girer
-3. İsteğe bağlı not ekler
-4. "GENERATE QR" butonuna basar
-5. QR kod oluşur: `algorand://ADDRESS?amount=MICROALGOS&note=NOTE`
-6. Başkası QR'ı okuyunca Pera/Defly wallet otomatik açılır
-
-## Gereksinimler
-
-- Flutter 3.0+
-- Android 5.0+ (API 21+)
-- Dart 3.0+
+## 👥 Contributors
+Developed for Algorand Hackathon 2025
